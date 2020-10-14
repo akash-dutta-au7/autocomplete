@@ -10,6 +10,10 @@ export const SearchBox = styled.div`
   border-radius: 4;
   padding: 10px;
   margin-top: 5rem;
+  @media screen and (max-width: 960px) {
+    display: flex;
+    margin-top: 7rem;
+  }
 `;
 
 export const SearchBtn = styled.button`
@@ -23,6 +27,11 @@ export const SearchBtn = styled.button`
   border-radius: 4px;
   padding: 0.7rem 1rem;
   cursor: pointer;
+  @media screen and (max-width: 840px) {
+    padding-top: 1rem;
+    display: flex;
+    width: 60%;
+  }
 `;
 export const SearchText = styled.input`
   border: 1px solid #e8415d;
@@ -35,4 +44,7 @@ export const SearchText = styled.input`
   font-weight: 400;
   padding-left: 15px;
   padding-right: 20px;
+  @media screen and (max-width: 840px) {
+    width: 12rem;
+  }
 `;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import axios from "axios";
 import "../../App.css";
@@ -7,7 +7,6 @@ import { SearchBox, SearchBtn, SearchText } from "./index.style";
 
 import LocationSuggestion from "../LocationSuggestion";
 const Search = () => {
-  const [display, setDisplay] = useState(false);
   const [locations, setLocations] = useState([]);
   const [search, setSearch] = useState("");
 
@@ -18,7 +17,6 @@ const Search = () => {
       )
       .then((response) => {
         setLocations(response.data.data.result);
-        console.log(response.data.data.result);
       })
       .catch((err) => {
         console.log(err);
@@ -51,7 +49,7 @@ const Search = () => {
         <LocationSuggestion
           searchLocation={searchLocation}
           search={search}
-          key={locations.id}
+          key={Math.ceil(Math.random() * 10)}
         />
       </div>
     </div>

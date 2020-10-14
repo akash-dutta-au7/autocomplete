@@ -1,5 +1,4 @@
 import React from "react";
-import _ from "lodash";
 import { GoLocation } from "react-icons/go";
 import "../../App.css";
 

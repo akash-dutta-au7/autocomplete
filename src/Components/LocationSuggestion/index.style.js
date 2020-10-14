@@ -17,9 +17,6 @@ export const SuggetionContainer = styled.div`
   border-radius: 5px;
   margin-left: -7.9rem;
 `;
-//   .suggetion-info {
-//     margin-left: 1rem;
-//   }
 
 export const Icon = styled.div`
   margin-top: 1rem;

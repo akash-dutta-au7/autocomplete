@@ -3,6 +3,7 @@ import Search from "./Components/Searchbar";
 import Headings from "./Components/Headings";
 import Navbar from "./Components/Navbar";
 import "./App.css";
+
 import { BrowserRouter } from "react-router-dom";
 
 function App() {

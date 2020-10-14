@@ -1,7 +1,7 @@
-import React, { Fragment, useState } from "react";
+import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { AiOutlineArrowRight } from "react-icons/ai";
-// import Button from "../Button";
+import { AiOutlineQuestionCircle } from "react-icons/ai";
+import { IoMdHelpBuoy, IoMdLogIn } from "react-icons/io";
 
 import {
   Nav,
@@ -36,19 +36,29 @@ const Navbar = () => {
             </NavItem>
 
             <NavItem>
-              <NavLinks to="/blog">Features</NavLinks>
+              <NavLinks>Features</NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks to="/signin">How it works</NavLinks>
+              <NavLinks>
+                {" "}
+                <AiOutlineQuestionCircle />{" "}
+                <span style={{ marginLeft: ".5rem" }}>How it works</span>
+              </NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks to="/premium">Help</NavLinks>
+              <NavLinks>
+                <IoMdHelpBuoy />
+                <span style={{ marginLeft: ".5rem" }}>Help</span>
+              </NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks to="/register">Login</NavLinks>
+              <NavLinks>
+                <IoMdLogIn />
+                <span style={{ marginLeft: ".5rem" }}>Login</span>
+              </NavLinks>
             </NavItem>
           </NavItemContainer>
         </NavMenu>

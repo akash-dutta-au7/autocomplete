@@ -1,13 +1,14 @@
 import React from "react";
+import { Heading, MainHeading, SubHeading } from "./index.style";
 
 const Headings = () => {
   return (
-    <div className="headings">
-      <h1>Home away from home</h1>
-      <p>
+    <Heading>
+      <MainHeading>Home away from home</MainHeading>
+      <SubHeading>
         Book your student accommodation near top universities across the globe.
-      </p>
-    </div>
+      </SubHeading>
+    </Heading>
   );
 };
 
