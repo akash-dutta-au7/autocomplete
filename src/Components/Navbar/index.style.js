@@ -27,7 +27,7 @@ export const NavbarContainer = styled(Container)`
 export const Logo = styled(Link)`
   color: #fff;
   display: flex;
-  font-family: Serif;
+  font-family: sans-serif;
   justify-content: center;
   align-items: center;
   text-decoration: none;
@@ -98,7 +98,7 @@ export const NavItemContainer = styled.div`
 export const NavLinks = styled(Link)`
   color: #d3d3d3;
   display: flex;
-  font-family: Serif;
+  font-family: sans-serif;
   /* justify-content: center; */
   font-size: 1.3rem !important;
   align-items: center;
