@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
-
 import axios from "axios";
 import "../../App.css";
+
+import { SearchBox, SearchBtn, SearchText } from "./index.style";
 
 import LocationSuggestion from "../LocationSuggestion";
 const Search = () => {
@@ -33,30 +34,27 @@ const Search = () => {
   });
 
   return (
-    console.log("Search location", locations),
-    (
+    <div>
+      <SearchBox>
+        <SearchText
+          type="text"
+          placeholder="Type to search"
+          value={search}
+          onChange={searchChange}
+        />
+        <SearchBtn>
+          {" "}
+          <AiOutlineSearch size={20} /> Search
+        </SearchBtn>
+      </SearchBox>
       <div>
-        <div className="search-box">
-          <input
-            type="text"
-            placeholder="Type to search"
-            className="search-txt"
-            value={search}
-            onChange={searchChange}
-          />
-          <a href="/#" className="search-btn">
-            <AiOutlineSearch size={25} />
-          </a>
-        </div>
-        <div>
-          <LocationSuggestion
-            searchLocation={searchLocation}
-            search={search}
-            key={locations.id}
-          />
-        </div>
+        <LocationSuggestion
+          searchLocation={searchLocation}
+          search={search}
+          key={locations.id}
+        />
       </div>
-    )
+    </div>
   );
 };
 
