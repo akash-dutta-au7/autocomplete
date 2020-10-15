@@ -10,7 +10,8 @@ export const SearchBox = styled.div`
   border-radius: 4;
   padding: 10px;
   margin-top: 5rem;
-  @media screen and (max-width: 960px) {
+
+  @media screen and (max-width: 840px) {
     display: flex;
     margin-top: 7rem;
   }
@@ -36,6 +37,7 @@ export const SearchBtn = styled.button`
 export const SearchText = styled.input`
   border: 1px solid #e8415d;
   border-radius: 4px;
+  outline: none;
   height: 3rem;
   width: 20rem;
   font-family: "Nunito Sans", sans-serif;

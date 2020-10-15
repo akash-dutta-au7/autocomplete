@@ -24,7 +24,12 @@ const Navbar = () => {
   return (
     <Nav>
       <NavbarContainer>
-        <Logo to="/">amber</Logo>
+        <Logo to="/">
+          <img
+            src="https://static-assets-amberstudent.imgix.net/images/logo/amber_logo_full.png"
+            alt=""
+          />
+        </Logo>
 
         <HamburgerMenu onClick={menuToggle}>
           {click ? <FaTimes /> : <FaBars />}

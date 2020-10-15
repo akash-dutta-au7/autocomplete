@@ -1,5 +1,7 @@
 body {
-  background-image: url(./Assets/header_home_1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+    url(./Assets/header_home_1.jpg) no-repeat center center/cover;
 }

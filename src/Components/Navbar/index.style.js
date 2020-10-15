@@ -25,15 +25,23 @@ export const NavbarContainer = styled(Container)`
 `;
 
 export const Logo = styled(Link)`
-  color: #fff;
   display: flex;
-  font-family: sans-serif;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: bold;
   cursor: pointer;
+  img {
+    width: 12rem;
+    height: 3rem;
+    margin-top: 1rem;
+    @media screen and (max-width: 840px) {
+      margin-top: 0.1rem;
+    }
+  }
+`;
+
+export const Img = styled.img`
+  background: url("https://static-assets-amberstudent.imgix.net/images/logo/amber_logo_full.png");
+  z-index: 4;
 `;
 
 export const HamburgerMenu = styled.div`
