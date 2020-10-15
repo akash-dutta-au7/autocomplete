@@ -10,11 +10,12 @@ const Search = () => {
   const [locations, setLocations] = useState([]);
   const [search, setSearch] = useState("");
   const key = Math.ceil(Math.random() * 10);
+  const proxyURL = "https://cors-anywhere.herokuapp.com/";
   console.log(key);
   useEffect(() => {
     axios
       .get(
-        `https://base.amberstudent.com/api/v0/regions?sort_key=search_name&sort_order=desc&states=active&search_name=${locations}`
+        `${proxyURL}https://base.amberstudent.com/api/v0/regions?sort_key=search_name&sort_order=desc&states=active&search_name=${locations}`
       )
       .then((response) => {
         setLocations(response.data.data.result);
