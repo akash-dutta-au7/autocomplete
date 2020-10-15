@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import axios from "axios";
 import "../../App.css";
-import { v4 as uuidv4 } from "uuid";
 
 import { SearchBox, SearchBtn, SearchText } from "./index.style";
 
