@@ -11,7 +11,6 @@ const Search = () => {
   const [search, setSearch] = useState("");
   const key = Math.ceil(Math.random() * 10);
   const proxyURL = "https://cors-anywhere.herokuapp.com/";
-  console.log(key);
   useEffect(() => {
     axios
       .get(
