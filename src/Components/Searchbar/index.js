@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 import axios from "axios";
 import "../../App.css";
+import { v4 as uuidv4 } from "uuid";
 
 import { SearchBox, SearchBtn, SearchText } from "./index.style";
 
@@ -9,7 +10,7 @@ import LocationSuggestion from "../LocationSuggestion";
 const Search = () => {
   const [locations, setLocations] = useState([]);
   const [search, setSearch] = useState("");
-
+  const key = uuidv4();
   useEffect(() => {
     axios
       .get(
@@ -49,7 +50,7 @@ const Search = () => {
         <LocationSuggestion
           searchLocation={searchLocation}
           search={search}
-          key={Math.ceil(Math.random() * 10)}
+          key={key}
         />
       </div>
     </div>

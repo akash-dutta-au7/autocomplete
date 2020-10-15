@@ -3,7 +3,7 @@ import { GoLocation } from "react-icons/go";
 import "../../App.css";
 
 import {
-  Location,
+  LocationContainer,
   SuggetionContainer,
   Icon,
   TextLess3,
@@ -11,7 +11,7 @@ import {
 } from "./index.style";
 const LocationSuggestion = ({ searchLocation, search }) => {
   return (
-    <Location>
+    <LocationContainer>
       {!searchLocation ? (
         <h3>No location found</h3>
       ) : search.length >= 3 ? (
@@ -28,7 +28,7 @@ const LocationSuggestion = ({ searchLocation, search }) => {
       ) : search.length >= 1 && search.length < 3 ? (
         <TextLess3>Type minimun 3 character</TextLess3>
       ) : null}
-    </Location>
+    </LocationContainer>
   );
 };
 

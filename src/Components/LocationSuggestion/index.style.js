@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Location = styled.div`
+export const LocationContainer = styled.div`
   display: grid;
   justify-content: center;
   margin-top: 5%;
