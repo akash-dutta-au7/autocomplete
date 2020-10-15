@@ -10,7 +10,8 @@ import LocationSuggestion from "../LocationSuggestion";
 const Search = () => {
   const [locations, setLocations] = useState([]);
   const [search, setSearch] = useState("");
-  const key = uuidv4();
+  const key = Math.ceil(Math.random() * 10);
+  console.log(key);
   useEffect(() => {
     axios
       .get(
