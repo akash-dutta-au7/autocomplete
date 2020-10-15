@@ -41,11 +41,11 @@ const Navbar = () => {
             </NavItem>
 
             <NavItem>
-              <NavLinks>Features</NavLinks>
+              <NavLinks to="/features">Features</NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks>
+              <NavLinks to="/instruction">
                 {" "}
                 <AiOutlineQuestionCircle />{" "}
                 <span style={{ marginLeft: ".5rem" }}>How it works</span>
@@ -53,14 +53,14 @@ const Navbar = () => {
             </NavItem>
 
             <NavItem>
-              <NavLinks>
+              <NavLinks to="/help">
                 <IoMdHelpBuoy />
                 <span style={{ marginLeft: ".5rem" }}>Help</span>
               </NavLinks>
             </NavItem>
 
             <NavItem>
-              <NavLinks>
+              <NavLinks to="/login">
                 <IoMdLogIn />
                 <span style={{ marginLeft: ".5rem" }}>Login</span>
               </NavLinks>

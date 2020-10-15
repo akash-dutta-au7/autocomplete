@@ -3,7 +3,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import axios from "axios";
 import "../../App.css";
 
-import { SearchBox, SearchBtn, SearchText, Img } from "./index.style";
+import { SearchBox, SearchBtn, SearchText } from "./index.style";
 
 import LocationSuggestion from "../LocationSuggestion";
 const Search = () => {
